@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="jquery.horizonScroll.js"></script>
+
+</head>
+<body>
+
+<header data-role="header" id="header"></header>
+
+<div class="horizon-prev"><img src="images/l-arrow.png"></div>
+<div class="horizon-next"><img src="images/r-arrow.png"></div>
+
+<section data-role="section" id="section-section1"></section>
+<section data-role="section" id="section-section2">
+    <ul>
+    <h1>Choose your chalk. </h1>
+    <h2>Choose your board. </h2>
+    <h3>Loose yourself in the colorful world. </h3>
+    </ul>
+<div class ="btn">
+    <a href="basic.html">
+    <button class="go">Basic</button>
+    </a>
+    <a href="customized.html">
+    <button class="go">Customized</button>
+    </a>
+</div>
+</section>
+
+
+<footer data-role="footer" id="footer"></footer>
+
+<script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
+
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+</script>
+
+</body>
+</html>
